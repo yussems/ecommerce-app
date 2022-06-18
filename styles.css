@@ -1,15 +1,12 @@
-
 /* scroll event*/
-.scrollContent{
-   scroll-snap-type: y mandatory;
-    height: 100vh;
-    overflow-y: scroll;
-   
+.scrollContent {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
 }
 .scrollContent > .scrollzz {
-    scroll-snap-align: start;
-    height: 100vh;
-
+  scroll-snap-align: start;
+  height: 100vh;
 }
 
 /* #725368 dark purple
@@ -45,9 +42,23 @@
 }
 
 nav {
-    height: 5.625rem
+  height: 5.625rem;
 }
 /* section carosel height */
-.carousel-inner{
-    height: calc(100vh - 5.625rem) ;
+.carousel-inner {
+  height: calc(100vh - 5.625rem);
+}
+
+/* fixed Nav */
+.fixedContainer {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+.hov{
+    border: 1px solid #8d7688;
+    transition: .1s;
+}
+.hov:hover {
+  border:2px solid #725368 ;
 }
