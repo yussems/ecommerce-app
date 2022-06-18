@@ -49,6 +49,10 @@ nav {
   height: calc(100vh - 5.625rem);
 }
 
+
+
+
+
 /* fixed Nav */
 .fixedContainer {
   width: 100px;
@@ -56,9 +60,14 @@ nav {
   cursor: pointer;
 }
 .hov{
+    
     border: 1px solid #8d7688;
     transition: .1s;
 }
 .hov:hover {
   border:2px solid #725368 ;
+}
+.attach:hover {
+    background-size: 100px;
+    cursor: pointer;
 }
