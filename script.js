@@ -1,19 +1,32 @@
 const firstVisit = document.querySelector(".first-Visit");
-const aa = document.querySelector(".aa");
+const formVal = document.querySelector(".formVal");
+const localInput = document.querySelector(".localInput");
+const userName = document.querySelector(".userName");
 
-let val = false
-aa.addEventListener('click',(e) => {
-    val = true
-    firstVisit.classList.add('d-none') 
-    
-    localStorage.setItem('auth', val);
+formVal.addEventListener("submit", (e) => {
+    e.preventDefault();
+  const name = localInput.value;
+  localStorage.setItem("name", name);
+  firstVisit.style.display = "none";
+   window.location.reload();
+});
 
-})
-
-console.log(val);
-if(localStorage.getItem('auth')){
-    firstVisit.classList.add('d-none') 
+function checkVisiter() {
+    if (localStorage.getItem("name") === null) {
+      firstVisit.classList.add('d-block')
+    }else{
+        
+        firstVisit.classList.add('d-none')
+    }
 
 }
+checkVisiter()
 
-
+function setName() {
+    if(localStorage.getItem("name") === ''){
+        userName.innerHTML = 'Ziyaretçi'
+    }
+    const name = localStorage.getItem("name");
+    userName.innerHTML = `Merhaba ${name.toUpperCase()}`;
+}
+setName()
