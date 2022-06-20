@@ -58,10 +58,7 @@
   height: 100%;
 }
 
-/* fixed Nav */
-.fixedContainer {
-  cursor: pointer;
-}
+
 
 @media screen and (max-width: 600px) {
   .marginOwn {
@@ -105,4 +102,13 @@
     rgba(139, 49, 95, 1) 66%,
     rgba(114, 83, 104, 1) 100%
   );
+}
+
+
+/* card hover */
+.imgHover{
+  transition: 0.1s;
+}
+.imgHover:hover {
+  transform: scale(1.1);
 }
