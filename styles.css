@@ -2,6 +2,8 @@
   --images-size: calc(100vh - 5.625rem);
 }
 
+
+
 /* scroll event*/
 
 /* section carosel height */
@@ -26,12 +28,6 @@
   } */
 }
 
-/* #725368 dark purple
-#8D7688 light purple
-#F1EEDB white
-
-#D9B4A3 kream
-#C19185 dark cream */
 
 .bg-own-darkPurple {
   background: #725368;
@@ -111,4 +107,14 @@
 }
 .imgHover:hover {
   transform: scale(1.1);
+}
+
+/* stick place poiner */
+.cursor {
+  cursor: pointer;
+}
+
+/* footer hover */
+.footer:hover {
+  color: #725368;
 }
