@@ -71,6 +71,9 @@
     scroll-snap-align: inherit;
     height: 100%;
   }
+  .own-wrap {
+  }
+  
 }
 
 .hov {
@@ -121,4 +124,8 @@
 /* override a tag */
 a.footer:visited, a.footer:active{ 
   color:  #f1eedb ;
+}
+
+nav[aria-label='breadcrumb']{
+  height: auto  !important;
 }

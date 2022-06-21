@@ -46,4 +46,5 @@ unsubit.addEventListener("click", () => {
   setName()
 });
 
-
+ 
+const detay =document.querySelector('.detay')
