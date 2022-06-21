@@ -11,7 +11,6 @@ logout.addEventListener("click", () => {
   window.location.reload();
 });
 
-
 //check the user
 function setName() {
   if (
@@ -19,31 +18,29 @@ function setName() {
     sessionStorage.getItem("name") === null
   ) {
     firstVisit.classList.add("d-none");
-    userName.innerHTML = "Ziyaretçi";
+    // userName.innerHTML = "Ziyaretçi";
   }
-    if (sessionStorage.getItem("name") !== "") {
+  if (sessionStorage.getItem("name") !== "") {
     firstVisit.classList.add("d-none");
 
-        const name = sessionStorage.getItem("name");
-        userName.innerHTML = `Merhaba ${name.toUpperCase()}`;
-    }
-
+    userName.innerHTML = `Merhaba ${sessionStorage
+      .getItem("name")
+      ?.toUpperCase()}`;
+  }
 }
 
 //validation of the form
-formVal.addEventListener("submit", (e) => {
+formVal?.addEventListener("submit", (e) => {
   e.preventDefault();
   const name = localInput.value;
   sessionStorage.setItem("name", name);
   setName();
-
 });
 
-
-
-unsubit.addEventListener("click", () => {
+unsubit?.addEventListener("click", () => {
   sessionStorage.setItem("name", "");
-  setName()
+  setName();
 });
 
- 
+
+userName.innerHTML = 'Merhaba ' + `${sessionStorage.getItem("name") ? sessionStorage.getItem("name").toUpperCase() :'Ziyaretçi'}`;

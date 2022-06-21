@@ -142,6 +142,15 @@ nav[aria-label='breadcrumb']{
 button.accordion-button::after:active{
   color:black
 }
+
+.accordion-button:focus{
+  border-color: none;
+  box-shadow:none
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-icon);
+  color: black;
+}
 /* button:hover {
   background-color:none !important;
 }
