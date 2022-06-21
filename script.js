@@ -47,4 +47,3 @@ unsubit.addEventListener("click", () => {
 });
 
  
-const detay =document.querySelector('.detay')

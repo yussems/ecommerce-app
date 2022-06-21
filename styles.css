@@ -72,6 +72,11 @@
     height: 100%;
   }
   .own-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
   }
   
 }
@@ -129,3 +134,18 @@ a.footer:visited, a.footer:active{
 nav[aria-label='breadcrumb']{
   height: auto  !important;
 }
+
+
+button.accordion-button::after:active{
+  color:black
+}
+/* button:hover {
+  background-color:none !important;
+}
+button a {
+  color: #8d7688;
+}
+button a:hover {
+  color: #8d7688;
+}
+ */

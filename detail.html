@@ -15,10 +15,11 @@
 
 <body>
 
+    <div>
 
         <nav class="navbar navbar-expand-sm navbar-dark bg-own-darkPurple ">
             <div class="container">
-                <a class="navbar-brand bg-own-white fs-1" href="#">ATRIUM</a>
+                <a class="navbar-brand bg-own-white fs-1" href="index.html">ATRIUM</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -80,7 +81,10 @@
                 </div>
             </div>
         </nav>
-        <main style="background-color: #f1eedb;" >
+
+
+
+        <main style="background-color: #f1eedb;">
             <div class="container">
                 <nav aria-label="breadcrumb" style="height: auto;">
                     <ol class="breadcrumb">
@@ -99,11 +103,38 @@
                             <div class="py-2 position-relative" style="width: 100%">
                                 <img src="assets/caroselThree.avif" class="img-fluid" alt="">
                                 <div class="position-absolute end-0 top-0 p-3">
-                                    <i class="bi bi-heart-fill fs-3 "></i>
+                                    <i class="bi bi-heart-fill fs-3 " style="color: #725368;" ></i>
                                 </div>
                             </div>
+
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active d-flex gap-2">
+                                        <img src="assets/caroselOne.avif" class=" w-25" alt="...">
+                                        <img src="assets/caroselOne.avif" class=" w-25" alt="...">
+                                        <img src="assets/caroselThree.avif" class=" w-25" alt="...">
+                                    </div>
+                                    <div class="carousel-item d-flex gap-2">
+                                        <img src="assets/caroselThree.avif" class=" w-25" alt="...">
+                                    </div>
+
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
                             <div class="d-flex gap-2">
-                                <div style="width: 8rem; " class="border border-1 border-secondary">
+
+                                <!-- <div style="width: 8rem; " class="border border-1 border-secondary">
                                     <img src="/assets/caroselThree.avif" class="img-fluid" alt="">
                                 </div>
                                 <div style="width: 8rem; " class="border border-1 border-secondary">
@@ -117,7 +148,8 @@
                                 </div>
                                 <div style="width: 8rem; " class="border border-1 border-secondary">
                                     <img src="/assets/caroselThree.avif" class="img-fluid" alt="">
-                                </div>
+                                </div> -->
+
                             </div>
                         </div>
 
@@ -126,7 +158,7 @@
                             <div class="accordion mb-4 " id="accordionPanelsStayOpenExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        <button class="accordion-button" style="background-color: #725368; color: #f1eedb;" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                                             aria-controls="panelsStayOpen-collapseOne">
                                             Konfor ve Rahatlık
@@ -147,7 +179,7 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
+                                        <button class="accordion-button collapsed" style="background-color:#8d7688 ; color: #F1EEDB; border-color: none;" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
                                             aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                                             Göz Alıcı Şıklık
@@ -169,6 +201,7 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                                         <button class="accordion-button collapsed" type="button"
+                                        style="background-color:#a79ba5 ; color: #F1EEDB; border-color: none;" 
                                             data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
                                             aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                                             Uygun Fiyat
@@ -283,9 +316,10 @@
             </div>
         </footer>
 
+    </div>
 
 
-
+    <script src="script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
