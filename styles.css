@@ -78,6 +78,9 @@
     justify-content: center;
 
   }
+  .ownWidth{
+    width: 100%;
+  }
   
 }
 
