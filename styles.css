@@ -116,5 +116,9 @@
 
 /* footer hover */
 .footer:hover {
-  color: #725368;
+  color: #725368 !important;
+}
+/* override a tag */
+a.footer:visited, a.footer:active{ 
+  color:  #f1eedb ;
 }
