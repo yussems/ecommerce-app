@@ -60,9 +60,9 @@
   .marginOwn {
     margin-top: 0 !important ;
   }
-  .respon {
+  /* .respon {
     display: none;
-  }
+  } */
   .scrollContent {
     scroll-snap-type: none;
     height: 100%;
