@@ -163,3 +163,30 @@ button a:hover {
  */
 
 
+ .img-galery {
+  filter: brightness(0.5);
+  transition: 0.3s;
+  
+}
+ .img-galery:hover{
+  transform-origin: top ;
+  filter: brightness(1);
+  transform: scale(1.3);
+  z-index: 100;
+
+}
+
+@media screen and (max-width: 600px) {
+  .respon-img-galery{
+    width: 100%;
+  }  
+  .img-galery {
+    filter: brightness(1);
+    
+  }
+  .img-galery:hover{
+    filter: brightness(1);
+    transform: scale(1);
+  
+  }
+}
