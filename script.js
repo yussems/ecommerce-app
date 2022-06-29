@@ -44,3 +44,25 @@ unsubit?.addEventListener("click", () => {
 
 
 userName.innerHTML = 'Merhaba ' + `${sessionStorage.getItem("name") ? sessionStorage.getItem("name").toUpperCase() :'Ziyaretçi'}`;
+
+
+window.addEventListener('load',() => {
+  if(sessionStorage.getItem('name')){
+    firstVisit.classList.add("d-none");
+
+
+  }
+})
+
+const colAdd = document.querySelector('.colAdd')
+const filterNone = document.querySelector('.filterNone')
+function handleClose() {
+  filterNone.classList.add('d-none')
+  colAdd.classList.add('col-12')
+}
+function openFilter() {
+  filterNone.classList.remove('d-none')
+
+  colAdd.classList.remove('col-12')
+  
+}
