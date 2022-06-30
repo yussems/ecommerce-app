@@ -202,3 +202,18 @@ button a:hover {
   
   }
 }
+.d-add {
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .menu-none-sideBar{
+    display: none;
+
+  }
+  .colAdd{
+    width: 100% !important;
+  }
+  .d-add{
+    display: block !important;
+  }
+}
