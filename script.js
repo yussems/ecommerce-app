@@ -54,15 +54,20 @@ window.addEventListener('load',() => {
   }
 })
 
-const colAdd = document.querySelector('.colAdd')
-const filterNone = document.querySelector('.filterNone')
-function handleClose() {
-  filterNone.classList.add('d-none')
-  colAdd.classList.add('col-12')
-}
-function openFilter() {
-  filterNone.classList.remove('d-none')
 
-  colAdd.classList.remove('col-12')
+// side bar kendim yptığım hali ama boostrap te offCanvas özelliği kullanıldı.
+// const colAdd = document.querySelector('.colAdd')
+// const filterNone = document.querySelector('.filterNone')
+// function handleClose() {
+//   filterNone.classList.add('d-none')
+//   colAdd.classList.add('col-12')
+// }
+
+
+
+// function openFilter() {
+//   filterNone.classList.remove('d-none')
+
+//   colAdd.classList.remove('col-12')
   
-}
+// }
